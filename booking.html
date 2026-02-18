@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Service | THE CAR MASTER</title>
+  <meta name="description" content="Book your vehicle service with THE CAR MASTER. Submit your booking online for fast confirmation from our workshop team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="logo.jpeg" alt="The Car Master brand logo" />
+        <span class="brand-text">The Car Master</span>
+      </a>
+      <button class="mobile-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="branches.html">Branches</a></li>
+        <li><a href="booking.html">Book Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Book Service</h1>
+        <p>Fill in your details and our team will review your request, schedule your visit, and contact you with confirmation.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container booking-layout">
+        <aside class="contact-card reveal">
+          <h3>Service Booking Support</h3>
+          <p class="section-intro">Your booking request is securely recorded and sent to our team for quick follow-up.</p>
+          <ul class="contact-list">
+            <li><strong>Kaithal:</strong> <a href="tel:+919646309777">+91 96463 09777</a></li>
+            <li><strong>Jind:</strong> <a href="tel:+919992202977">+91 99922 02977</a></li>
+            <li><strong>Safidon:</strong> <a href="tel:+918397089700">+91 83970 89700</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info.thecarmaster@gmail.com">info.thecarmaster@gmail.com</a></li>
+          </ul>
+          <div class="hero-cta">
+            <a class="btn btn-outline" href="tel:+919646309777">Call Kaithal Branch</a>
+            <a class="btn btn-outline" href="tel:+919992202977">Call Jind Branch</a>
+            <a class="btn btn-outline" href="tel:+918397089700">Call Safidon Branch</a>
+          </div>
+        </aside>
+
+        <div class="form-card reveal">
+          <form id="booking-form" class="form-grid" novalidate>
+            <div class="form-field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" required />
+            </div>
+            <div class="form-field">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            </div>
+            <div class="form-field">
+              <label for="branch">Branch</label>
+              <select id="branch" name="branch" required>
+                <option value="">Select branch</option>
+                <option value="Kaithal">Kaithal</option>
+                <option value="Jind">Jind</option>
+                <option value="Safidon">Safidon</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" id="emailAddress" name="emailAddress" required />
+            </div>
+            <div class="form-field">
+              <label for="carModel">Car Model</label>
+              <input type="text" id="carModel" name="carModel" required />
+            </div>
+            <div class="form-field">
+              <label for="serviceRequired">Service Required</label>
+              <select id="serviceRequired" name="serviceRequired" required>
+                <option value="">Select a service</option>
+                <option value="Car Repair &amp; Maintenance">Car Repair &amp; Maintenance</option>
+                <option value="Engine Diagnostics">Engine Diagnostics</option>
+                <option value="Accident Repair &amp; Insurance Support">Accident Repair &amp; Insurance Support</option>
+                <option value="Car Accessories">Car Accessories</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" name="preferredDate" required />
+            </div>
+            <div class="form-field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Share any specific concern about your vehicle or service requirement."></textarea>
+            </div>
+            <div class="form-field full">
+              <button type="submit" class="btn btn-primary">Submit Booking</button>
+            </div>
+          </form>
+          <div id="form-response" class="message-box" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="logo.jpeg" alt="The Car Master footer logo" />
+          <span class="brand-text">The Car Master</span>
+        </a>
+        <p>Professional automobile workshop support for repair, diagnostics, accessories, and accident assistance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="branches.html">Branches</a></li>
+          <li><a href="booking.html">Book Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li>Car Repair &amp; Maintenance</li>
+          <li>Engine Diagnostics</li>
+          <li>Accident Repair &amp; Insurance Support</li>
+          <li>Car Accessories</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Branch Contacts</h4>
+        <ul>
+          <li>Kaithal: <a href="tel:+919646309777">+91 96463 09777</a></li>
+          <li>Jind: <a href="tel:+919992202977">+91 99922 02977</a></li>
+          <li>Safidon: <a href="tel:+918397089700">+91 83970 89700</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 THE CAR MASTER. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
