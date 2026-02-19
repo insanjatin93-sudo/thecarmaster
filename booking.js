@@ -30,8 +30,8 @@
       return;
     }
 
-    if (!payload.phone || !/^\+?[0-9\\s-]{8,15}$/.test(payload.phone)) {
-      showMessage("error", "Please enter a valid phone number.");
+    if (!payload.phone || !/^\d{10}$/.test(payload.phone)) {
+      showMessage("error", "Please enter a valid 10-digit phone number.");
       return;
     }
 
