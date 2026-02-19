@@ -25,6 +25,36 @@
       branch: form.branch.value
     };
 
+    if (!payload.name || payload.name.length < 2) {
+      showMessage("error", "Please enter your full name.");
+      return;
+    }
+
+    if (!payload.phone || !/^\+?[0-9\\s-]{8,15}$/.test(payload.phone)) {
+      showMessage("error", "Please enter a valid phone number.");
+      return;
+    }
+
+    if (!payload.branch) {
+      showMessage("error", "Please select a branch.");
+      return;
+    }
+
+    if (!payload.carModel) {
+      showMessage("error", "Please enter your car model.");
+      return;
+    }
+
+    if (!payload.service) {
+      showMessage("error", "Please select a service.");
+      return;
+    }
+
+    if (!payload.preferredDate) {
+      showMessage("error", "Please select a preferred date.");
+      return;
+    }
+
     const submitBtn = form.querySelector("button[type='submit']");
     submitBtn.disabled = true;
     submitBtn.textContent = "Submitting...";
